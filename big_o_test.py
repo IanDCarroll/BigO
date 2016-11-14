@@ -4,7 +4,7 @@ from big_o import O_of_1
 test = O_of_1()
 
 test_list = []
-for i in range(0, 10,000):
+for i in range(0, 10000):
     test_list.append(i)
 
 

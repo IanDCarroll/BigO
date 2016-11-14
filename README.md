@@ -29,7 +29,7 @@ __O(2^N)__ = Exponential slow-down to scale. For every value you add input, the 
 
 __O(logN)__ = Initially slow, but it evens out at scale. A function like this takes its slowness upfront and then approaches a set limit as time goes on. A binary search is a good example of this.
 
-__O(Nlog(N))__ = slower than linear, but not as slow as exponential. This will have performance problems at large scales. In the smaller scale it appears to behave very similarly to linear, but Big O is about ansering how things will perform as the scale apporaches infinity. Python's sort() function is of this kind.
+__O(Nlog(N))__ = slower than linear, but not as slow as exponential. This will have performance problems at large scales. In the smaller scale it appears to behave very similarly to linear, but Big O is about answering how things will perform as the scale apporaches infinity. Python's sort() function is of this kind.
 
 ###Confused still? Did I miss something? Am I just plain wrong?
 Then I'm probably not explaining this right. <a href="https://github.com/IanDCarroll/BigO/issues/new">Raise an issue.</a> :smile: 

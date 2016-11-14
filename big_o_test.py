@@ -9,4 +9,4 @@ for i in range(0, 10000):
 
 
 def test_O_of_1():
-    assert O_of_1.run(test_list) == True
+    assert test.run(test_list) == True

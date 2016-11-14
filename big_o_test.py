@@ -1,5 +1,5 @@
 import nose.tools
-from big_o import O_of_1
+from big_o import O_of_1, O_of_N
 
 test1 = O_of_1()
 test2 = O_of_N()

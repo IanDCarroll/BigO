@@ -47,3 +47,7 @@ class BigO_of_2_to_the_N(object):
             return final_number
         else:
             return 1
+
+class BigO_of_N_log_N(object):
+    def sort_list(self, value_list):
+        return sorted(value_list)

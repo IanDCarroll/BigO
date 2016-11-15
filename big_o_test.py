@@ -14,5 +14,5 @@ def test_O_of_1_tells_truth():
 
 def test_O_of_N_Doubles_lists():
     returned_list = test_of_N.double_values(test_list)
-    assert returned_list[880] == test_list[880] * 2
+    assert returned_list[880] == 1760
  

@@ -5,7 +5,7 @@ class BigO_of_1(object):
 
 class BigO_of_N(object):
     def double_values(self, value_list):
-        finished_list = []
-        for i in value_list:
-            finished_list.append(i * 2)
-        return finished_list
+        for i in range(0, len(value_list)):
+            value_list[i] = value_list[i] * 2
+        print value_list[880]
+        return value_list

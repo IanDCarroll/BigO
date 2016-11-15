@@ -1,11 +1,12 @@
 import nose.tools
-from big_o import BigO_of_1, BigO_of_N, BigO_of_N_Squared, BigO_of_N_Cubed, BigO_of_N_to_the_Fourth
+import big_o 
 
-test_of_1 = BigO_of_1()
-test_of_N = BigO_of_N()
-test_of_N_Squared = BigO_of_N_Squared()
-test_of_N_Cubed = BigO_of_N_Cubed()
-test_of_N_Four = BigO_of_N_to_the_Fourth()
+test_of_1 = big_o.BigO_of_1()
+test_of_N = big_o.BigO_of_N()
+test_of_N_Squared = big_o.BigO_of_N_Squared()
+test_of_N_Cubed = big_o.BigO_of_N_Cubed()
+test_of_N_Four = big_o.BigO_of_N_to_the_Fourth()
+test_of_2_N = big_o.BigO_of_2_to_the_N()
 
 test_list = []
 for i in range(0, 100):
@@ -39,3 +40,7 @@ def test_O_of_N_Four_Makes_a_spam_hyperspace():
     assert len(returned_list[88][88]) == 100
     assert len(returned_list[88][88][88]) == 100
     assert returned_list[88][88][88][88] == 'spam'
+
+def test_O_of_2_N_Gives_the_right_factorial():
+    result = test_of_2_N.get_factorial(8)
+    assert result == 40320

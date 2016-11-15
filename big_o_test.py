@@ -1,10 +1,11 @@
 import nose.tools
-from big_o import BigO_of_1, BigO_of_N, BigO_of_N_Squared, BigO_of_N_Cubed
+from big_o import BigO_of_1, BigO_of_N, BigO_of_N_Squared, BigO_of_N_Cubed, BigO_of_N_to_the_Fourth
 
 test_of_1 = BigO_of_1()
 test_of_N = BigO_of_N()
 test_of_N_Squared = BigO_of_N_Squared()
 test_of_N_Cubed = BigO_of_N_Cubed()
+test_of_N_Four = BigO_of_N_to_the_Fourth()
 
 test_list = []
 for i in range(0, 100):
@@ -30,3 +31,11 @@ def test_O_of_N_Cubed_makes_a_spam_space():
     assert len(returned_list[88]) == 100
     assert len(returned_list[88][88]) == 100
     assert returned_list[88][88][88] == 'spam'
+
+def test_O_of_N_Four_Makes_a_spam_hyperspace():
+    returned_list = test_of_N_Four.create_spam_hyperspace(test_list)
+    assert len(returned_list) == 100
+    assert len(returned_list[88]) == 100
+    assert len(returned_list[88][88]) == 100
+    assert len(returned_list[88][88][88]) == 100
+    assert returned_list[88][88][88][88] == 'spam'

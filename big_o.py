@@ -16,3 +16,13 @@ class BigO_of_N_Squared(object):
             for j in range(0, len(value_list)):
                 value_list[i].append('spam')
         return value_list
+
+class BigO_of_N_Cubed(object):
+    def create_spam_space(self, value_list):
+        for i in range(0, len(value_list)):
+            value_list[i] = []
+            for j in range(0, len(value_list)):
+                value_list[i].append([])
+                for k in range (0, len(value_list)):
+                    value_list[i][j].append('spam')
+        return value_list

@@ -3,6 +3,7 @@ from big_o import BigO_of_1, BigO_of_N
 
 test_of_1 = BigO_of_1()
 test_of_N = BigO_of_N()
+test_of_N_Squared = BigO_of_N_Squared()
 
 test_list = []
 for i in range(0, 10000):
@@ -16,3 +17,7 @@ def test_O_of_N_Doubles_lists():
     returned_list = test_of_N.double_values(test_list)
     assert returned_list[880] == 1760
  
+def test_O_of_N_Squared():
+    returned_list = test_of_N_Squared.ascending_field_of_spam(test_list)
+    assert len(returned_list[880]) == 880
+    assert returned_list[10000][880] == 'spam'

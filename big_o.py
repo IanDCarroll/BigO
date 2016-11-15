@@ -41,4 +41,9 @@ class BigO_of_N_to_the_Fourth(object):
 
 class BigO_of_2_to_the_N(object):
     def get_factorial(self, value):
-        return value
+        final_number = 0
+        if value > 1:
+            final_number = value * self.get_factorial(value - 1)
+            return final_number
+        else:
+            return 1

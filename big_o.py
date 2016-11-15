@@ -10,7 +10,7 @@ class BigO_of_N(object):
         return value_list
 
 class BigO_of_N_Squared(object):
-    def field_of_spam(self, value_list):
+    def create_spam_field(self, value_list):
         for i in range(0, len(value_list)):
             value_list[i] = []
             for j in range(0, len(value_list)):

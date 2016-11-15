@@ -19,7 +19,7 @@ def test_O_of_N_Doubles_lists():
     assert returned_list[88] == 176
  
 def test_O_of_N_Squared_makes_a_spam_field():
-    returned_list = test_of_N_Squared.field_of_spam(test_list)
+    returned_list = test_of_N_Squared.create_spam_field(test_list)
     assert len(returned_list) == 100
     assert len(returned_list[88]) == 100
     assert returned_list[88][88] == 'spam'

@@ -38,3 +38,7 @@ class BigO_of_N_to_the_Fourth(object):
                     for l in range(0, len(value_list)):
                         value_list[i][j][k].append('spam')
         return value_list
+
+class BigO_of_2_to_the_N(object):
+    def get_factorial(self, value):
+        return value

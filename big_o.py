@@ -26,3 +26,15 @@ class BigO_of_N_Cubed(object):
                 for k in range (0, len(value_list)):
                     value_list[i][j].append('spam')
         return value_list
+
+class BigO_of_N_to_the_Fourth(object):
+    def create_spam_hyperspace(self, value_list):
+        for i in range(0, len(value_list)):
+            value_list[i] = []
+            for j in range(0, len(value_list)):
+                value_list[i].append([])
+                for k in range(0, len(value_list)):
+                    value_list[i][j].append([])
+                    for l in range(0, len(value_list)):
+                        value_list[i][j][k].append('spam')
+        return value_list

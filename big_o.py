@@ -10,9 +10,9 @@ class BigO_of_N(object):
         return value_list
 
 class BigO_of_N_Squared(object):
-    def ascending_field_of_spam(self, value_list):
+    def field_of_spam(self, value_list):
         for i in range(0, len(value_list)):
             value_list[i] = []
-            for j in range(0, i):
+            for j in range(0, len(value_list)):
                 value_list[i].append('spam')
         return value_list

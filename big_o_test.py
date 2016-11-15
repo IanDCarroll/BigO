@@ -1,5 +1,5 @@
 import nose.tools
-from big_o import BigO_of_1, BigO_of_N
+from big_o import BigO_of_1, BigO_of_N, BigO_of_N_Squared
 
 test_of_1 = BigO_of_1()
 test_of_N = BigO_of_N()
@@ -20,4 +20,4 @@ def test_O_of_N_Doubles_lists():
 def test_O_of_N_Squared():
     returned_list = test_of_N_Squared.ascending_field_of_spam(test_list)
     assert len(returned_list[880]) == 880
-    assert returned_list[10000][880] == 'spam'
+    assert returned_list[888][880] == 'spam'

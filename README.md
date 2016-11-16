@@ -23,13 +23,19 @@ __O(1)__ = Constant at scale. No matter how many values you plug into this, it a
 
 __O(N)__ = Linear slow-down to scale. For every value you add to input, it takes aritmatically that much longer to output.
 
-__O(N^2)__ = Double linear slow-down to scale. For every value you add to input, it takes that times 2 to output.
+__O(N^2)__ = Squared linear slow-down to scale. For every value you add to input, it takes that times itself to output.
 
 __O(2^N)__ = Exponential slow-down to scale. For every value you add input, the function takes that number times itself to output. If you run one of these you'll notice it grind to a halt after a certain point. It really just can't be used at scale.
 
 __O(logN)__ = Initially slow, but it evens out at scale. A function like this takes its slowness upfront and then approaches a set limit as time goes on. A binary search is a good example of this.
 
 __O(Nlog(N))__ = slower than linear, but not as slow as exponential. This will have performance problems at large scales. In the smaller scale it appears to behave very similarly to linear, but Big O is about answering how things will perform as the scale apporaches infinity. Python's sort() function is of this kind.
+
+### There are more things in heaven and Earth, Horatio, Than are dreamt of in your Big O.
+
+While performance of a certain algorithm is something once should consider, there is much more to creating a fast system than optimizing locally. You have to consider the system's constraints, and specifically the bottleneck, the slow poke of the system. If you can identify the slowpoke, that's where you need to focus your optimization efforts. The speed of the slowpoke is the speed of the entire system. Optimizing code that's already fast isn't going to do you any good. So when using big O, you need to be able to evaluate the speed of the entire system end-to-end. Then you need to be able to identify where those bottlenecks are. Big O can help with this. Then, once you've established where the bottleneck is, you focus your attention there, make that the heart of your system, and try to find ways to offload work from the bottleneck, or speed it up. Again, Big O is only one tool you can use for this. There are many others that don't have fancy mathematical formulae.
+
+Additionally, just because an algorythm has a certain Big O does not mean it will perform the same as another algorythm with the same Big O. Also, algorithms with the same Big O may perform differently under different conditions. A very fun example of this was brought up by <a href="https://github.com/kammitama5">__@kammitama5__</a> in <a href="https://www.toptal.com/developers/sorting-algorithms/">this website analyzing different sorting algorithms</a>. Algorithms exist in many dimensions. Big O captures but one of these. Whole systems, which is how any developer _must_ think, exist in even more. Big O is another useful tool for the developer's toolbox, but should not be the ony one.
 
 ###Confused still? Did I miss something? Am I just plain wrong?
 Then I'm probably not explaining this right. <a href="https://github.com/IanDCarroll/BigO/issues/new">Raise an issue.</a> :smile: 
